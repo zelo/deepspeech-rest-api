@@ -1,0 +1,16 @@
+#========#
+# Custom #
+#========#
+
+# deepspeech model dir
+**/model/
+
+#========================#
+# Python's .dockerignore #
+#========================#
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__
+**/*.py[cod]
+**/*$py.class
+
