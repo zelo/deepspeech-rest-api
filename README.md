@@ -5,7 +5,9 @@ Simple api over mozilla deepspeech voice recognition engine.
 
 ## Endpoints
 ```
-POST /api/v1/stt - Just look at curl command below
+POST /api/v1/stt - Just look at curl command below.
+Speech data may be provided in whatever audio format which ffmpeg is able to convert to wav,
+so you probably don't have to worry about this at all.
 
 $  curl -X POST -F "speech=@./speech.mp3" http://127.0.0.1:9000/api/v1/stt 
 ➜ {"text":"but over all revenue and"}
