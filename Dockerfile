@@ -1,4 +1,4 @@
-FROM python:3.7 as build
+FROM python:3.8 as build
 
 RUN pip install -U pip virtualenv \
  && virtualenv -p `which python3` /venv/
@@ -8,7 +8,7 @@ ENV PATH=/venv/bin/:$PATH
 ADD ./requirements.pip /requirements.pip
 RUN pip install -r /requirements.pip
 
-FROM python:3.7
+FROM python:3.8
 
 RUN apt-get update \
  && apt-get install --no-install-recommends -y ffmpeg \
