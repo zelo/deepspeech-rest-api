@@ -3,12 +3,8 @@ services:
   api:
     build: .
     container_name: 'api'
-    #environment:
-    #  MODEL_DIR: '/app/model.pbmm'
-    #  MAX_ENGINE_WORKERS: 3
-    #  FFMPEG_PATH: 'ffmpeg'
     ports:
       - '127.0.0.1:8000:8000'
     restart: 'unless-stopped'
     volumes:
-      - './model:/app/model:ro'
+      - './model.pbmm:/app/model.pbmm:ro'
