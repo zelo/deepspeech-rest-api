@@ -2,9 +2,7 @@
 # Custom #
 #========#
 
-# deepspeech model dir
-model/
-
+.idea/
 
 #==================================================================================================#
 # Python's .gitignore - https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore #
