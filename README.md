@@ -29,8 +29,8 @@ $ curl -X POST -F "speech=@speech.mp3" http://127.0.0.1:8000/api/v1/stt
 1. Run `docker-compose up`
 #### 2.1.2 Using `docker run`
 1. Build image
-`docker build . --tag zelo/deepspeech-rest-api:0.7.1`
+`docker build . --tag zelo/deepspeech-rest-api:0.9.1`
 2. Run
-`docker run --rm --publish=127.0.0.1:8000:8000 --volume=$(pwd)/model.pbmm:/app/model.pbmm:ro zelo/deepspeech-rest-api:0.7.1`
+`docker run --rm --publish=127.0.0.1:8000:8000 --volume=$(pwd)/model.pbmm:/app/model.pbmm:ro zelo/deepspeech-rest-api:0.9.1`
 ### 2.2 Running outside of docker
 Just look at the content of `Dockerfile` it contains complete instruction to setup app under `debian`
