@@ -19,11 +19,9 @@ $ curl -X POST -F "speech=@speech.mp3" http://127.0.0.1:8000/api/v1/stt
 `git clone git@github.com:zelo/deepspeech-rest-api.git`
 
 ### 1. Download deepspeech data model
-1. Look at `requirements.pip` file and find what is the current 
-deepspeech library version used by this api
-2. Go to `https://github.com/mozilla/DeepSpeech/releases` and find release doc for this version.
-It should contain link to download data model. For version 0.7.1 it's `https://github.com/mozilla/DeepSpeech/releases/download/v0.7.1/deepspeech-0.7.1-models.pbmm`
-3. Download and extract model from above package to `<repository_root>/model.pbmm`
+1. Enter `<repository_root>`
+2. Run
+`wget https://github.com/mozilla/DeepSpeech/releases/download/v0.9.1/deepspeech-0.9.1-models.pbmm -O model.pbmm`
 
 ### 2.1 Using docker
 1. Enter `<repository_root>`
