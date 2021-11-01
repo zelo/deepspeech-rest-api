@@ -29,4 +29,6 @@ async def stt(request):
 
 
 if __name__ == '__main__':
+    app.config.REQUEST_TIMEOUT=600
+    app.config.RESPONSE_TIMEOUT=600
     app.run(host='0.0.0.0', port=8000)
